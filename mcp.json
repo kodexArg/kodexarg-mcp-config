@@ -1,7 +1,8 @@
 {
   "mcpServers": {
     "kodexarg": {
-      "url": "https://kodexarg.com/mcp"
+      "command": "npx",
+      "args": ["-y", "mcp-remote@latest", "https://mcp.kodexarg.com/mcp"]
     }
   }
 }
