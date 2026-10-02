@@ -21,7 +21,7 @@ Copiá [`mcp.json`](./mcp.json) en la configuración MCP del cliente (por ejempl
 
 En un entorno Bun el mismo puente es `bunx mcp-remote@latest` en lugar de `npx -y mcp-remote@latest`. El archivo commiteado deja `npx`.
 
-El Workers AI Playground, el conector custom de claude.ai y el developer mode de ChatGPT piden la dirección del portal en su propia pantalla: `https://mcp.kodexarg.com/mcp`. Este archivo no es esa pantalla.
+El Workers AI Playground, el conector custom de claude.ai y el developer mode de ChatGPT piden la URL del portal en su propia pantalla: `https://mcp.kodexarg.com/mcp`. Este archivo no es esa pantalla.
 
 ## Login
 
@@ -33,7 +33,7 @@ Después del login, el server de origen puede mostrar **Connect**. Ese paso es e
 
 El cliente llama a `kodexarg_ask_kodexarg`. El argumento es `{ "message": string }`, solo lectura.
 
-Ese nombre lo arma el portal: el id del server `kodexarg` más la tool que el Worker conserva, `ask_kodexarg`. Un cliente instruido a llamar `ask_kodexarg` contra la dirección del portal no encuentra la tool.
+Ese nombre lo arma el portal: el id del server `kodexarg` más la tool que el Worker conserva, `ask_kodexarg`. Un cliente instruido a llamar `ask_kodexarg` contra la URL del portal no encuentra la tool.
 
 El portal además inyecta estas tres. El Worker no puede apagarlas:
 
